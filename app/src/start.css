@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+html {
+    height: 100%;
+    
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    font-family: 'Rocher';
+    margin:0px;
+    
+    
+   
+}
+#root {
+    height: 100%;
+    min-height: 100%;
+}
+.all {
+    height: 100%;
+    display:grid;
+    grid-template-rows:33% 33% 33% ;
+    
+    
+    
+}
+
+.CapsonRect {
+    display:flex;
+    align-items: center;
+    
+    
+    
+    
+
+    
+    font-size: 100%
+    
+}
+.prvi {
+    font-size:10vh;
+}
+.drugi {
+    margin-left: 33%;
+    font-size:10vh;
+
+
+}
+
+.treci {
+    margin-left:66%;
+    font-size:10vh;
+}
+
+.caps {
+    
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 10s;
+  }
+  @keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0;    
+    }
+  }
+
+
+
+  .homepage {
+    height: 100%;
+    display:grid;
+    grid-template-rows:10% 10% 10% 10% 10% 10% 10% 10% 10% 10%  ;
+   
+    
+    
+    
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    text-decoration: none;
+    font-size: 7vh;
+    
+}
+
+.loginpage {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#button-2 {
+    position: relative;
+    display:flex;
+    overflow: hidden;
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+.signmein {
+    
+    border-radius: 30px;
+    font-size: 5vh;
+    padding:6px;
+    
+
+
+}
+
+.input {
+    height: 30px;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width:300px
+}
+
+.header{
+  display:flex;
+  flex-direction: row;
+  
+  
+  
+  padding: 0%;
+  gap:20vw;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.item {
+  font-size: 5vh;
+}
+.name {
+  font-size: 3vh;
+}
+
+.login {
+  font-size: 3vh;
+}
+
+.two {
+  margin-left: 10%;
+}
+
+.three
+{
+  margin-left: 20%;
+}
+
+.four {
+  margin-left: 30%;
+
+}
+
+.five {
+  margin-left: 40%;
+
+}
+
+.six {
+  margin-left: 50%;
+
+}
+.seven {
+  margin-left: 60%;
+}
+.eight {
+  margin-left: 70%;
+}
+
+.lobby {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow-x:auto;
+  height: 33%;
+  
+}
+
+
+.activeP {
+  height: 3fr;
+ 
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+  font-size: 3vh;
+}
+.sve {
+  display: flex;
+  flex-direction: column;
+}
+.lobbyitem {
+
+  padding:5px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  margin-top: 1px;
+}
+.button-32 {
+  
+  
+
+  
+  cursor: pointer;
+  font-family:"Rocher";
+  font-style:italic;
+  background: orange;
+  border: 2px orange solid;
+  border-radius: 10px;
+  
+}
+
+
+
+
+/* CSS */
+
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+  border: #f4e603;
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+.life {
+
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5%;
+  font-size: 2rem;
+  border-bottom: 1px solid black;
+  
+  
+}
+
+.t1 {
+  margin: 7px;
+}
+
+.t2 {
+  margin: 7px;
+  
+}
+.imena{
+  display:flex;
+  height: 100px;
+  flex-direction: row;
+  justify-content: center;
+  gap:20%;
+}
+
+
+
+.readyButton {
+  
+  min-width:50%;
+  min-height: 30%;
+  
+  font-family: "Rocher";
+  background-color:yellow;
+  border:2px solid yellow;
+  border-radius:500px;
+  font-size: 2rem;
+}
+
+.buttonDiv{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.readyButton:hover {
+  cursor:pointer
+}
+
+.imeznak{
+  margin:20px;
+  font-size: 2rem;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.counter {
+  font-size: 4rem;
+  font-family: "Rocher";
+}
+
+.white {
+  background:linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height:30% ;
+  font-family:"Rocher";
+  border: 1px solid ;
+  border-radius: 30px;
+
+
+}
+
+.next:hover {
+  cursor: pointer;
+}
+
+.next {
+  font-size: 2rem;
+}
+
