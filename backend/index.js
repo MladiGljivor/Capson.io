@@ -53,8 +53,8 @@ serverJWT=serverToken
 async function login(username,pass) {
   text="Select passwordHash from users  where username=$1";
   const values = [username]
-   const upit=await db.query(text,values)
-
+   
+  upit=await db.query(text,values)
 
    if(upit.rows[0]===undefined)
    return false
@@ -70,6 +70,19 @@ async function login(username,pass) {
 
 
 }
+async function kurcina() {
+  text="Select * from users  where username=$1";
+  const values = ["abc"]
+   const upit=await db.query(text,values)
+   return upit.rows[0];
+
+}
+
+app.get("/",(req,res)=>{
+
+  res.send("kurcina")
+  
+})
 app.post('/login', (req, res) => {
   console.log("login",req.body.username,req.body.pass)
   res.setHeader('Content-Type', 'application/json');
@@ -217,14 +230,14 @@ io.on('connection', (socket) => {
     
 
     
-      "state":[{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}}],"bodovi":1000,"life":100,"rijeci":rword.generate(5,{length:"4-10"})
+      "state":[{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}}],"bodovi":0,"life":100,"rijeci":rword.generate(5,{length:"4-10"})
               
                               }
         
             ,"player2":{
               "id":id2,
 
-              "state":[{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}}],"bodovi":1000,"life":100,"rijeci":rword.generate(5,{length:"4-10"})
+              "state":[{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}},{"sektor":{"rijec":"","posto":0}}],"bodovi":0,"life":100,"rijeci":rword.generate(5,{length:"4-10"})
 
                         } ,
          
@@ -595,7 +608,7 @@ function updateGame () {
 
 
 server.listen(process.env.PORT, () => {
-  console.log('listening on *:4000');
+  console.log('lyistening on :4000');
   updateLobby()
   updateGameStates()
   updateGame()

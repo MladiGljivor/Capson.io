@@ -577,7 +577,7 @@ const Game = () => {
             socket.emit("ubioRijec",{"room":localStorage.getItem("activeRoom"),"sektor":2,"word":sektor2_rijec_enemy,"pos":enemypos2})
             setSmrt2(true)
           
-            setSmrtnaPos3(enemypos2)
+            setSmrtnaPos2(enemypos2)
             setSmrtnaWord2(sektor2_rijec_enemy)
           }
           if(sektor3_rijec_enemy!="") {
