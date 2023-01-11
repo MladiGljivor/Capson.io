@@ -63,7 +63,7 @@ const Login = () => {
 
     async function test() {
       var data = {username,pass} 
-      fetch("http://localhost:4000/login", {
+      fetch("http://3.124.193.139:4000/login", {
         method: 'POST',
         
         credentials:"same-origin",

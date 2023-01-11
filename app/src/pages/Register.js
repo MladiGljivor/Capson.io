@@ -59,7 +59,7 @@ const Register = () => {
 
     async function sendCreds() {
       var data = {username,pass} 
-      fetch("http://localhost:4000/register", {
+      fetch("http://3.124.193.139:4000/register", {
         method: 'POST',
         
         credentials:"same-origin",
